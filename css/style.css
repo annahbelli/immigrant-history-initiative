@@ -101,30 +101,60 @@ header nav ul li a {
 /*Photo Section*/
 
 .main { 
-  height: 400px;
-  background-image: url(../images/class.jpg);
-  padding: 4%;
+  height: 450px;
+  background-color: white;
 
 }
 
-.mission {
+.text {
+  padding: 2%;
+  background-color: white;
+  text-align: left;
+}
+
+.col-50 {
   width: 50%;
+  float: left;
+  height: 450px;
+}
+
+.mission {
+  width: 90%;
   background-color: rgba(255,255,255,0.7);  
   height: 100%;
 }
 
 .mission h2 {
-  font-size: 34px;
-  text-align: center;
+  font-size: 60px;
   font-weight: 600;
-  color: #0e50ba;
+  color: black;
 }
 
 .mission p {
   color: black;
 }
 
+.photo {
+  background-image: url(../images/home.jpg);
+  background-color: blue;
+}
 
+.readmore, .readless {
+  text-align: right;
+  margin-top: 30px;
+}
+.readmore a, .readless a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#show-this-on-click {
+  margin-top: 10px;
+}
+
+.main-read-more {
+  height: 850px;
+}
 
 /*Donate button*/
 .button {
@@ -157,8 +187,16 @@ header nav ul li a {
 /*Contact Form*/
 
 .form-holder {
-  height: 600px;
+  height: 640px;
   padding: 4%;
+  background-color: #79c649;
+}
+
+.form-holder h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -175,8 +213,8 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #f9e42e;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -185,7 +223,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: lightblue;
 }
 
 

@@ -18,6 +18,12 @@
 		
 		$('.readless').show();
 
+		$('.main').addClass('main-read-more');
+
+		$('html, body').animate({
+    		scrollTop: $("#show-this-on-click").offset().top
+		}, 1000);
+
 
 
 	//   - hide the "Read More" link using ```$.hide()```
@@ -35,18 +41,12 @@
 	event.preventDefault();
 		$('#show-this-on-click').slideUp();
 		$('.readless').hide();
+		$('.main').removeClass('main-read-more');
+		$('html, body').animate({
+    		scrollTop: $(".mission").offset().top
+		}, 1000);
 
 
 	// 	- show the "Read More" link using```$.show()```
 		$('.readmore').show();
 	});
-
-// - Using the same functions as above, if a user clicks the "Learn More" link in the sidebar:
-	//  - have the ```<span>``` inside that ```<p>``` slide down
-	// - and hide the "Learn More" link using ```$.slideDown()``` and ```$.hide()```
-
-		$('.learnmore').click(function(event){
-			event.preventDefault();
-			$('#learnmoretext').slideDown();
-			$('.learnmore').hide();
-		});
