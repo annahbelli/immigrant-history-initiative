@@ -103,6 +103,7 @@ header nav ul li a {
 .main { 
   height: 450px;
   background-color: white;
+  transition: 1s height ease;
 
 }
 
