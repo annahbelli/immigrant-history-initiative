@@ -32,10 +32,10 @@
 		<div class="main clearfix">
 			<div class="col-50 text">
 				<div class="mission">
-					<h2>Telling Untold Stories.</h2>
-					<p><br>The Immigrant History Initiative seeks to educate and empower communities through the untold stories of immigrant diasporas in America. </p>
+					<h2 class="subhead">Telling Untold Stories.</h2>
+					<p class="text"><br>The Immigrant History Initiative seeks to educate and empower communities through the untold stories of immigrant diasporas in America. </p>
 
-					<p class="hide" id="show-this-on-click">The Immigrant History Initiative is a non-profit organization founded in 2018. The organization produces curriculum focused on immigrant histories and works with schools and communities to establish courses sharing this knowledge. We also provide teaching and course development support in partnership with other organizations bringing immigrant histories into the mainstream. </p>
+					<p class=" text hide" id="show-this-on-click">The Immigrant History Initiative is a non-profit organization founded in 2018. The organization produces curriculum focused on immigrant histories and works with schools and communities to establish courses sharing this knowledge. We also provide teaching and course development support in partnership with other organizations bringing immigrant histories into the mainstream. </p>
 					<p class="readmore"><a href="#">Read more &gt;</a></p>
 					<div id="prevent"></div>
 						<p class="readless hide"><a href="#">Read less &gt;</a></p>
@@ -49,7 +49,7 @@
 			<h2>Contact Us</h2>
 
 			<div class="form">
-				<form action="mailto:someone@example.com" method="post" enctype="text/plain"">
+				<form name="contact" action="https://formspree.io/annazambelli@gmail.com" method="post" enctype="text/plain" netlify>
 
     				<label for="fname">First Name</label>
     				<input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -57,21 +57,22 @@
     				<label for="lname">Last Name</label>
     				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
+    				<label for="email">Email</label>
+    				<input type="text" id="email" name="email" placeholder="youremail@something.com">
+
     				<label for="subject">Message</label>
     				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
     				<input type="submit" value="Submit">
 
   				</form>
-
-
 			</div>
 
 
 		</div>
 
 		<aside id="bottom-cta">
-			<a class="button blue" href="#">Donate</a>
+			<a class="button blue hide" href="#">Donate</a>
 		</aside>
 		<footer>
 			<h4 class="logo">Logo</h4>

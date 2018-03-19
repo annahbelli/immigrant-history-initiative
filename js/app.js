@@ -50,3 +50,30 @@
 	// 	- show the "Read More" link using```$.show()```
 		$('.readmore').show();
 	});
+
+
+// CURRICULUM REGISTRATION FORM
+
+// If the user clicks submit
+
+	$('#register').click(function(event){
+	event.preventDefault();
+	
+		$('#show-on-submit').removeClass('hide') ;
+
+// Hide the form 
+
+		$('.hide-on-submit').hide();
+
+// Show the download button instead
+
+		$('html, body').animate({
+    		scrollTop: $(".download-box").offset().top
+		}, 1000);
+
+});
+
+
+
+
+
