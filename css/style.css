@@ -421,10 +421,110 @@ footer p {
 .involved {
   height: 850px;
 }
+
+
 /******************************************
-/* ADDITIONAL STYLES
+/* MOBILE VERSION
 /*******************************************/
 
+/*Mobile Nav*/
+
+/*#hamburger {
+  border: 2px solid white;
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+span.ham-line {
+  width: 40px;
+  margin: 2px;
+  height: 2px;
+  position: relative;
+  display: block;
+  background-color: white;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+#mobile-only {
+  height: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.mobilenav {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  margin-top: -50%;
+  transform: translate(-110%, 100%);
+  transition: 1s all cubic-bezier(1, 0.25, 0.07, 0.96);
+}
 
 
+.mobilenav ul {
+  padding-left: 17px;
+}
 
+.mobile-nav-items {
+  list-style: none;
+  font-size: 18px;
+  background-color: white;
+}
+
+.mobilenav.active {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  #hamburger {
+    display: inline-block;
+  }
+
+  .mobilenav.active {
+    display: block;
+    transform: translate(0%, 100%);
+  }
+
+  nav, hr {
+    display: none;
+  }
+
+  .container {
+    background-color: white;
+    background-image: none;
+  }
+
+  #name {
+    color: #3206a1;
+    font-size: 40px;
+    margin-top: 3%;
+  }
+
+  .subhead {
+    font-size: 25px;
+  }
+
+  .holder {
+    margin-top: 20%;
+  }
+
+/*HOME PAGE
+
+.logo-holder {
+  height: 150px;
+  background-color: #79c649;
+  text-align: center;
+}
+
+header .logo {
+  float: none;
+}
+
+}
+*/*/
