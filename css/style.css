@@ -116,7 +116,6 @@ header nav ul li a {
 /*Photo Section*/
 
 .main { 
-  height: 450px;
   background-color: white;
   transition: 1s height ease;
 
@@ -423,108 +422,128 @@ footer p {
 }
 
 
-/******************************************
+/*/******************************************
 /* MOBILE VERSION
 /*******************************************/
 
 /*Mobile Nav*/
-
-/*#hamburger {
-  border: 2px solid white;
-  display: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-span.ham-line {
-  width: 40px;
-  margin: 2px;
-  height: 2px;
-  position: relative;
-  display: block;
-  background-color: white;
-  border-radius: 3px;
-  pointer-events: none;
-}
-
-#mobile-only {
-  height: 50px;
-  text-align: center;
-  position: relative;
-}
-
-.mobilenav {
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-width: 420px;
-  margin-top: -50%;
-  transform: translate(-110%, 100%);
-  transition: 1s all cubic-bezier(1, 0.25, 0.07, 0.96);
-}
-
-
-.mobilenav ul {
-  padding-left: 17px;
-}
-
-.mobile-nav-items {
-  list-style: none;
-  font-size: 18px;
-  background-color: white;
-}
-
-.mobilenav.active {
+.mobile-mission {
   display: none;
 }
+
+.mobile-only {
+  display: none;
+}
+
+
+
 
 @media screen and (max-width: 480px) {
-  #hamburger {
+  .mobile-only {
     display: inline-block;
+    height: 100%;
+    width: 100%;
   }
 
-  .mobilenav.active {
-    display: block;
-    transform: translate(0%, 100%);
-  }
-
-  nav, hr {
+  nav, .desktop-only {
     display: none;
   }
 
-  .container {
-    background-color: white;
-    background-image: none;
-  }
-
-  #name {
-    color: #3206a1;
-    font-size: 40px;
-    margin-top: 3%;
-  }
+  /*FONT SIZES*/
 
   .subhead {
-    font-size: 25px;
+    font-size: 28px;
   }
 
-  .holder {
-    margin-top: 20%;
+  .text {
+    font-size: 19px;
   }
 
-/*HOME PAGE
+/*Mobile Header*/
+  .mobile-logo{
+    width: 100%;
+    height: 60px;
+    background-color: #79c649;
+    color: white;
+    text-align: center;
+  }
 
-.logo-holder {
-  height: 150px;
-  background-color: #79c649;
-  text-align: center;
+  .mobile-logo .logo {
+    font-size: 35px;
+    color: white;
+  }
+
+  .mobilenav {
+    height: 50px;
+    width: 100%;
+  }
+
+  .mobile-item {
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 100%;
+  }
+
+  .mobile-item a {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+
+  }
+
+/*Mobile Home Page*/
+  .mobile-mission {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .mobile-mission img {
+    width: 100%;
+  }
+
+/*Mobile About Us*/
+
+.col-40, .col-60 {
+  float: none;
+  width: 100%;
 }
 
-header .logo {
+.about-us {
+  height: 100%;
+  padding: 0%;
+}
+
+.img-holder{
+  padding: 0%;
+  width: 100%;
+}
+
+.about-us p {
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding: 8px;
+}
+
+.about-us img {
+  width: 100%;
+  margin-right: 0%;
+  content:url("images/girls-mobile.jpg");
+}
+
+.bio-holder {
+  float: none;
+  height: 100%;
+}
+.bio-holder .col-50 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
   float: none;
 }
 
-}
-*/*/
+
+
+
+

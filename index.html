@@ -14,10 +14,37 @@
 		
 	</head>
 	<body>
-		<header>
+
+
+<!-- MOBILE HEADER -->
+		<div class="mobile-only">
+			<div class="mobile-logo">
+				<a href="index.html"><h1 class="logo">Logo</h1></a>
+			</div>
+   			 <div class="mobilenav clearfix">
+				<div class="mobile-item yellow">
+					<a href="about.html">About</a>
+				</div>
+				<div class="mobile-item">
+					<a href="curriculum.html">Curriculum</a>
+				</div>
+				<div class="mobile-item yellow">
+					<a href="resources.html">Resources</a>
+				</div>
+				<div class="mobile-item">
+					<a href="involved.html">Get Involved</a>
+				</div>
+				<div class="mobile-item yellow">
+					<a href="#">Donate</a>
+				</div>				
+  			</div>
+		</div>
+
+<!-- DESKTOP HEADER -->
+		<header class="clearfix desktop-only">
 			<div class="container">
 				<div class="logo-holder">
-				<a href="index.html"><h1 class="logo nav-item">Logo</h1></a>
+				<a href="index.html"><h1 class="logo">Logo</h1></a>
 				</div>
 				<nav class="nav">
 					<ul>
@@ -29,32 +56,15 @@
 					</ul>
 				</nav>
 			</div>
-			<div id="mobile-only hide" >
-    		<div id="hamburger">
-      			<span class="ham-line"></span>
-      			<span class="ham-line"></span>
-      			<span class="ham-line"></span>
-   			 </div>
-   			 <div class="mobilenav mobile-nav-items hide">
-					<ul>
-						<li class="nav-item"><a href="about.html">About Us</a></li>
-						<li class="nav-item"><a href="curriculum.html">Curriculum</a></li>
-						<li class="nav-item"><a href="resources.html">Other Resources</a></li>
-						<li class="nav-item"><a href="involved.html">Get Involved</a></li>
-						<li class="nav-item"><a href="#">Donate</a></li>
-					</ul>
-  			</div>
-		</div>
- 
 		</header>
 
-		<div class="main clearfix top-div">
+		<div class="main clearfix top-div desktop-only">
 			<div class="col-50 text">
 				<div class="mission">
 					<h2 class="subhead">Telling Untold Stories.</h2>
 					<p class="text"><br>The Immigrant History Initiative seeks to educate and empower communities through the untold stories of immigrant diasporas in America. </p>
 
-					<p class=" text hide" id="show-this-on-click">The Immigrant History Initiative is a non-profit organization founded in 2018. The organization produces curriculum focused on immigrant histories and works with schools and communities to establish courses sharing this knowledge. We also provide teaching and course development support in partnership with other organizations bringing immigrant histories into the mainstream. </p>
+					<p class="text hide" id="show-this-on-click">The Immigrant History Initiative is a non-profit organization founded in 2018. The organization produces curriculum focused on immigrant histories and works with schools and communities to establish courses sharing this knowledge. We also provide teaching and course development support in partnership with other organizations bringing immigrant histories into the mainstream. </p>
 					<p class="readmore"><a href="#">Read more &gt;</a></p>
 					<div id="prevent"></div>
 						<p class="readless hide"><a href="#">Read less &gt;</a></p>
@@ -62,6 +72,13 @@
 			</div>
 			<div class="col-50 photo">
 			</div>
+		</div>
+
+		<div class="mobile-mission">
+			<img src="images/home-mobile.jpg" alt="Protesters">
+			<h2 class="subhead">Telling Untold Stories.</h2>
+			<p class="text"><br>The Immigrant History Initiative seeks to educate and empower communities through the untold stories of immigrant diasporas in America. </p>
+			<p class="text">The Immigrant History Initiative is a non-profit organization founded in 2018. The organization produces curriculum focused on immigrant histories and works with schools and communities to establish courses sharing this knowledge. We also provide teaching and course development support in partnership with other organizations bringing immigrant histories into the mainstream.</p>
 		</div>
 		
 		<div class="form-holder">
