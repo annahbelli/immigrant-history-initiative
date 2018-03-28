@@ -440,7 +440,7 @@ footer p {
 
 @media screen and (max-width: 480px) {
   .mobile-only {
-    display: inline-block;
+    display: block;
     height: 100%;
     width: 100%;
   }
@@ -486,10 +486,14 @@ footer p {
   }
 
   .mobile-item a {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: black;
 
+  }
+
+  .gray {
+    background-color: lightgray;
   }
 
 /*Mobile Home Page*/
@@ -542,6 +546,57 @@ footer p {
   text-align: center;
   float: none;
 }
+
+.text-holder {
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/*Curriculum Mobile*/
+
+.curriculum .col-50 {
+  float: none;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*Resources Mobile*/
+
+.resources a {
+  font-size: 18px;
+}
+
+.resources {
+  height: 100%;
+}
+
+/*Get Involved Mobile*/
+
+.form-holder {
+  height: 100%;
+}
+
+/*Mobile Footer*/
+
+footer .logo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer .copyright {
+  font-size: 12px;
+}
+
+#bottom-cta {
+  height: 35px;
+  padding: 0px;
+}
+
+
+
+
+
 
 
 
