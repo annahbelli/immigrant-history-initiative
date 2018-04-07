@@ -47,10 +47,10 @@ Developer @GA in NYC
 
 body {
   color: #043049;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.4;
   color: #606161;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   background: #f0efef;
 }
@@ -59,7 +59,7 @@ a {
 }
 
 .subhead {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 600;
   color: black;
   margin-bottom: -25px;
@@ -71,6 +71,14 @@ a {
 
 .bold {
   font-weight: 600;
+}
+
+.prata {
+  font-family: 'Prata', serif;
+}
+
+.header-image {
+  width: 100%;
 }
 
 
@@ -90,7 +98,7 @@ a {
 }
 
 header {
-  background: #79c649;
+  background: #c0f000;
   padding: 25px 0;
   overflow: hidden;
 }
@@ -109,6 +117,10 @@ header nav ul li {
   font-size: 20px;
 }
 header nav ul li a {
+  color: #666666;
+}
+
+header nav ul li a:hover {
   color: white;
 }
 
@@ -118,6 +130,9 @@ header nav ul li a {
 .main { 
   background-color: white;
   transition: 1s height ease;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100%;
 
 }
 
@@ -125,12 +140,13 @@ header nav ul li a {
   padding: 2%;
   background-color: white;
   text-align: left;
+  font-size: 18px;
 }
 
 .col-50 {
   width: 50%;
   float: left;
-  height: 450px;
+  height: 100%;
 }
 
 .mission {
@@ -140,27 +156,16 @@ header nav ul li a {
 }
 
 
+.photo img {
+  width: 100%;
+}
+
 .photo {
-  background-image: url(../images/home.jpg);
-  background-color: blue;
+
 }
 
-.readmore, .readless {
-  text-align: right;
-  margin-top: 30px;
-}
-.readmore a, .readless a {
-  color: #043049;
-  font-weight: 600;
-}
 
-#show-this-on-click {
-  margin-top: 10px;
-}
 
-.main-read-more {
-  height: 850px;
-}
 
 /*Donate button*/
 .button {
@@ -172,29 +177,54 @@ header nav ul li a {
   margin: 0 auto;
 }
 .yellow {
-  background: #ffd000;
-  color: #79c649;
+  background: #bfbfbf;
+  color: #c0f000;
 }
 .blue {
-  background: #79c649;
+  background: #c0f000;
   color: #fff;
   font-size: 24px;
 }
 
 #bottom-cta {
-  background: #ffd000;
+  background: lightgray;
   padding: 30px;
   text-align: center;
   height: 50px;
 }
 
+.student-quote {
+  background-color: #666666;
+  color: white;
+  font-size: 25px;
+  font-family: 'Prata', serif;
+  font-style: italic;
+  padding: 11%;
+}
+.student-quote .attrib {
+  font-family: 'Montserrat', sans-serif;
+  font-style: none;
+  text-align: center;
+  font-size: 20px;
+}
 
+.contact-intro {
+  padding-left: 11%;
+  padding-right: 11%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 18px;
+  background-color: white;
+}
 /*Contact Form*/
 
 .form-holder {
-  height: 740px;
+  height: 100%;
   padding: 4%;
-  background-color: #79c649;
+  background-color: #c0f000;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0 auto;
 }
 
 .form-holder h2 {
@@ -203,6 +233,12 @@ header nav ul li a {
   font-weight: 600;
   color: white;
 }
+
+#home-form {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -239,12 +275,12 @@ input[type=submit]:hover {
 
 /*Footer*/
 footer {
-  background: #79c649;
+  background: #c0f000;
   padding: 65px 0 45px;
   text-align: center;
 }
 footer .logo {
-  color: #f9e42e;
+  color: lightgray;
   margin-bottom: 68px;
 }
 footer ul li {
@@ -266,7 +302,7 @@ footer p {
 /*ABOUT US*/
 
 .bio-holder {
-  background-color: #79c649;
+  background-color: #c0f000;
   padding: 4%;
   height: 100%;
 }
@@ -301,9 +337,9 @@ footer p {
 
 .about-us {
   height: 100%;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
   padding-bottom: 1%;
   background-color: white;
 }
@@ -323,10 +359,6 @@ footer p {
   margin-bottom: 8px;
 }
 
-.about-us img {
-  width: 90%;
-  margin-right: 2%;
-}
 
 .img-holder {
   padding-top: 10%;
@@ -336,15 +368,18 @@ footer p {
   color: white;
 }
 
-.col-40 {
-  width: 40%;
+.float-left {
   float: left;
+  width: 25%;
+  margin-right: 2%;
+  margin-bottom: 2s%;
 }
 
-.col-60 {
-  width: 60%;
-  float: left;
+.float-right {
+  float: right;
+  width: 25%;
 }
+
 
 
 /*CURRICULUM*/
@@ -375,7 +410,7 @@ footer p {
 }
 
 .download-box {
-  background-color: #79c649;
+  background-color: #c0f000;
   height: 300px;
   padding: 15%;
 }
@@ -402,11 +437,15 @@ footer p {
 }
 
 .resources a {
-  color: #79c649;
+  color: #c0f000;
   font-size: 35px;
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
+}
+
+.resources h2 {
+  text-align: center;
 }
 
 
@@ -465,7 +504,7 @@ footer p {
   .mobile-logo{
     width: 100%;
     height: 60px;
-    background-color: #79c649;
+    background-color: #c0f000;
     color: white;
     text-align: center;
   }
@@ -578,6 +617,8 @@ footer p {
 .form-holder {
   height: 100%;
 }
+
+
 
 /*Mobile Footer*/
 
