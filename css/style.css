@@ -87,10 +87,7 @@ a {
 /*******************************************/
 
 /* Center the container */
-.container {
-  width: 960px;
-  margin: 0 auto;
-}
+
 
 .logo {
   font-size: 48px;
@@ -99,21 +96,18 @@ a {
 
 header {
   background: #c0f000;
-  padding: 25px 0;
   overflow: hidden;
-}
-header .logo {
-  color: #fff;
-  float: left;
+  height: 5%;
 }
 
 header nav {
-  float: right;
-  margin-top: 15px;
+  float: left;
+  margin-top: 3.5%;
+  width: 80%;
 }
 header nav ul li {
   display: inline-block;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 6%;
   font-size: 20px;
 }
 header nav ul li a {
@@ -122,6 +116,16 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: white;
+}
+
+header img {
+  width: 100%;
+}
+
+.logo-holder {
+  width: 14%;
+  float: left;
+  margin-left: 2%;
 }
 
 
@@ -199,7 +203,10 @@ header nav ul li a:hover {
   font-size: 25px;
   font-family: 'Prata', serif;
   font-style: italic;
-  padding: 11%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 21%;
+  padding-right: 21%;
 }
 .student-quote .attrib {
   font-family: 'Montserrat', sans-serif;
@@ -254,7 +261,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #f9e42e;
+    background-color: lightgray;
     color: black;
     padding: 12px 20px;
     border: none;
@@ -264,7 +271,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: lightblue;
+    background-color: white;
 }
 
 .form label {
@@ -275,13 +282,13 @@ input[type=submit]:hover {
 
 /*Footer*/
 footer {
-  background: #c0f000;
+  background: #666666;
   padding: 65px 0 45px;
   text-align: center;
 }
-footer .logo {
-  color: lightgray;
-  margin-bottom: 68px;
+footer img {
+  width: 20%;
+  margin-bottom: 2%;
 }
 footer ul li {
   display: inline-block;
@@ -342,6 +349,7 @@ footer p {
   padding-top: 5%;
   padding-bottom: 1%;
   background-color: white;
+  margin-top: -8px;
 }
 
 .small-subhead {
@@ -385,7 +393,7 @@ footer p {
 /*CURRICULUM*/
 
 .curriculum-form-holder {
-  height: 810px;
+  height: 100%;
 
 }
 
@@ -417,13 +425,28 @@ footer p {
 
 
 .curriculum .col-50 {
-  padding: 2%;
   float: left;
   height: 100%;
+  background-color: #c0f000;
 }
 
 #curriculum-holder {
   height: 100%;
+}
+
+.curriculum .col-50 img {
+  width: 100%;
+}
+
+.curriculum label {
+  font-size: 17px;
+}
+
+.reg-box {
+  height: 654px;
+  background-color: #c0f000;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 
@@ -450,17 +473,40 @@ footer p {
 
 
 /*GET INVOLVED*/
-.involved .form-holder {
-  background-color: white;
-}
 
 .involved h2 {
   color: black;
 }
 
 .involved {
-  height: 850px;
+  height: 100%;
+  font-size: 18px;
+  padding-bottom: 3%;
+  margin-top: -8px;
 }
+
+.numbered {
+  list-style-type: decimal;
+  margin-top: 20px;
+  padding-left: 1%;
+}
+.bullet {
+  list-style-type: circle;
+  margin-left: 4%;
+}
+
+.involved a {
+  color: #666666;
+  font-size: 24px;
+}
+
+.involved-form {
+  background-color: #c0f000;
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%
+}
+
 
 
 /*/******************************************
@@ -493,25 +539,24 @@ footer p {
   /*FONT SIZES*/
 
   .subhead {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .text {
-    font-size: 19px;
+    font-size: 17px;
   }
 
 /*Mobile Header*/
   .mobile-logo{
     width: 100%;
-    height: 60px;
+    height: 65px;
     background-color: #c0f000;
-    color: white;
     text-align: center;
   }
 
-  .mobile-logo .logo {
-    font-size: 35px;
-    color: white;
+  .mobile-logo img {
+    height: 63px;
+    margin-top: 2px;
   }
 
   .mobilenav {
@@ -520,21 +565,29 @@ footer p {
   }
 
   .mobile-item {
-    width: 20%;
+    width: 25%;
     float: left;
     text-align: center;
     height: 100%;
   }
 
-  .mobile-item a {
+  .mobile-item h3 {
     font-size: 12px;
     font-weight: 600;
-    color: black;
+    color: #c0f000;
 
   }
 
+  .mobile-item img {
+    width: 38px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -4px;
+  }
+
   .gray {
-    background-color: lightgray;
+    background-color: #bfbfbf;
+
   }
 
 /*Mobile Home Page*/
@@ -543,12 +596,46 @@ footer p {
     width: 100%;
     background-color: white;
   }
+
+  .mobile-mission p, .mobile-mission h2 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .mobile-mission h2 {
+    font-family: 'Prata', sans-serif;
+  }
   
   .mobile-mission img {
     width: 100%;
   }
 
+  .student-quote, .student-quote .attrib {
+    font-size: 14px;
+  }
+
+  .contact-intro {
+    font-size: 17px;
+  }
+
+  #home-form {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .form-holder h2 {
+    font-size: 20px;
+  }
+
+  .form label {
+    font-size: 17px;
+  }
+
 /*Mobile About Us*/
+
+.about-desktop {
+  display: none;
+}
 
 .col-40, .col-60 {
   float: none;
@@ -566,14 +653,14 @@ footer p {
 }
 
 .about-us p {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 0px;
-  padding: 8px;
+  padding: 4%;
 }
 
-.about-us img {
+#about-mobile {
+  display: block;
   width: 100%;
-  margin-right: 0%;
 }
 
 .bio-holder {
@@ -586,6 +673,10 @@ footer p {
   text-align: center;
   float: none;
   margin-left: 0px;
+}
+
+.bio-holder p {
+  font-size: 17px;
 }
 
 .text-holder {
@@ -601,6 +692,14 @@ footer p {
   height: 100%;
 }
 
+.reg-box {
+  height: 100%;
+}
+
+.mobile-hide {
+  display: none;
+}
+
 
 /*Resources Mobile*/
 
@@ -608,9 +707,16 @@ footer p {
   font-size: 18px;
 }
 
-.resources {
+.resources .about-us {
   height: 100%;
 }
+
+.soon {
+  height: 50px;
+  padding: 1%;
+  margin-top: -8px;
+}
+
 
 /*Get Involved Mobile*/
 
@@ -618,13 +724,28 @@ footer p {
   height: 100%;
 }
 
+.involved {
+  font-size: 17px;
+  padding: 4%;
+  margin-top: -8px;
+}
+
+.involved li {
+  margin-left: 7%;
+}
+
+.involved ul li {
+  margin-left: 15%;
+}
+
 
 
 /*Mobile Footer*/
 
-footer .logo {
-  font-size: 24px;
+footer img {
+  width: 150px;
   margin-bottom: 10px;
+  margin-top: -50px;
 }
 
 footer .copyright {

@@ -19,41 +19,50 @@
 <!-- MOBILE HEADER -->
 		<div class="mobile-only">
 			<div class="mobile-logo">
-				<a href="index.html"><h1 class="logo">Logo</h1></a>
+				<a href="index.html"><img src="images/logo-grey-mobile.png" alt="Logo"></a>
 			</div>
    			 <div class="mobilenav clearfix">
+				<a href="about.html">
 				<div class="mobile-item gray">
-					<a href="about.html">About</a>
+					<img src="images/about-mobile.png" alt="Icon">
+					<h3>About</h3>
 				</div>
-				<div class="mobile-item">
-					<a href="curriculum.html">Curriculum</a>
-				</div>
+				</a>
+				<a href="curriculum.html">
 				<div class="mobile-item gray">
-					<a href="resources.html">Resources</a>
+					<img src="images/curric-mobile.png" alt="Icon">
+					<h3>Curriculum</h3>
 				</div>
-				<div class="mobile-item">
-					<a href="involved.html">Join Us</a>
-				</div>
+				</a>
+				<a href="resources.html">
 				<div class="mobile-item gray">
-					<a href="#">Donate</a>
-				</div>				
+					<img src="images/resources-mobile.png" alt="Icon">
+					<h3>Resources</h3>
+				</div>
+				</a>
+				<a href="involved.html">
+				<div class="mobile-item gray">
+					<img src="images/involved-mobile.png" alt="Icon">
+					<h3>Join Us</h3>
+				</div>
+				</a>			
   			</div>
 		</div>
 
 <!-- DESKTOP HEADER -->
 		<header class="clearfix desktop-only">
-			<div class="container">
-				<a href="index.html"><h1 class="logo">Logo</h1></a>
-				<nav>
+				<div class="logo-holder">
+				<a href="index.html"><img src="images/logo-grey.png" alt="Logo"></a>
+				</div>
+				<nav class="nav">
 					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="curriculum.html">Curriculum</a></li>
-						<li><a href="resources.html">Other Resources</a></li>
-						<li><a href="involved.html">Get Involved</a></li>
-						<li><a href="#">Donate</a></li>
+						<li class="nav-item"><a href="about.html">About Us</a></li>
+						<li class="nav-item"><a href="curriculum.html">Curriculum</a></li>
+						<li class="nav-item"><a href="resources.html">Other Resources</a></li>
+						<li class="nav-item"><a href="involved.html">Get Involved</a></li>
+						<li class="nav-item"><a href="#">Donate</a></li>
 					</ul>
 				</nav>
-			</div>
 		</header>
 		
 		<img src="images/involved.png" alt="Get Involved" class="header-image">
@@ -64,33 +73,33 @@
 			</p>
 
 			<ol>
-				<li>Start an Immigrant History Program</li>
+				<li class="numbered">Start an Immigrant History Program</li>
 					<ul>
-						<li>Contact us to learn more!</li>
+						<li class="bullet">Contact us to learn more!</li>
 					</ul>
-				<li>Volunteer with Us</li>
+				<li class="numbered">Volunteer with Us</li>
 					<ul>
-						<li>We’re looking for translators, teachers, and curriculum-designers</li>
-						<li>Share your thoughts about the curriculum with us</li>
+						<li class="bullet">We’re looking for translators, teachers, and curriculum-designers</li>
+						<li class="bullet">Share your thoughts about the curriculum with us</li>
 					</ul>
-				<li>Get Connected to a Local Program</li>
+				<li class="numbered">Get Connected to a Local Program</li>
 					<ul>
-						<li>Reach out to learn more</li>
+						<li class="bullet">Reach out to learn more</li>
 					</ul>
-				<li><a href="#">Donate</a></li>
+				<li class="numbered"><a href="#">Donate</a></li>
 			</ol>
+			
+		</div>
 		
+		<div class="involved-form">
 		<div class="form-holder">
 			<h2>Contact Us</h2>
 
 			<div class="form">
 				<form name="contact" action="https://formspree.io/immigranthistoryinitiative@gmail.com" method="POST" enctype="text/plain" netlify>
 
-    				<label for="fname">First Name</label>
+    				<label for="fname">Name</label>
     				<input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    				<label for="lname">Last Name</label>
-    				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
     				<label for="email">Email</label>
     				<input type="text" id="email" name="_replyto" placeholder="youremail@something.com">
@@ -99,15 +108,16 @@
     				<input type="text" id="local" name="location" placeholder="City, State">
 
     				<label for="subject">Message</label>
-    				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    				<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
 
     				<input type="submit" value="Send">
 
   				</form>
 			</div>
+			</div>
 
 
-		</div>
+		
 
 
 		</div>
@@ -118,7 +128,7 @@
 			<a class="button blue hide" href="#">Donate</a>
 		</aside>
 		<footer>
-			<h4 class="logo">Logo</h4>
+			<img src="images/logo-green.png" alt="Logo">
 
 			<ul class="hide">
 				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>

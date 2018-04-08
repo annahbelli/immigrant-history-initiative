@@ -19,47 +19,54 @@
 <!-- MOBILE HEADER -->
 		<div class="mobile-only">
 			<div class="mobile-logo">
-				<a href="index.html"><h1 class="logo">Logo</h1></a>
+				<a href="index.html"><img src="images/logo-grey-mobile.png" alt="Logo"></a>
 			</div>
    			 <div class="mobilenav clearfix">
+				<a href="about.html">
 				<div class="mobile-item gray">
-					<a href="about.html">About</a>
+					<img src="images/about-mobile.png" alt="Icon">
+					<h3>About</h3>
 				</div>
-				<div class="mobile-item">
-					<a href="curriculum.html">Curriculum</a>
-				</div>
+				</a>
+				<a href="curriculum.html">
 				<div class="mobile-item gray">
-					<a href="resources.html">Resources</a>
+					<img src="images/curric-mobile.png" alt="Icon">
+					<h3>Curriculum</h3>
 				</div>
-				<div class="mobile-item">
-					<a href="involved.html">Join Us</a>
-				</div>
+				</a>
+				<a href="resources.html">
 				<div class="mobile-item gray">
-					<a href="#">Donate</a>
-				</div>				
+					<img src="images/resources-mobile.png" alt="Icon">
+					<h3>Resources</h3>
+				</div>
+				</a>
+				<a href="involved.html">
+				<div class="mobile-item gray">
+					<img src="images/involved-mobile.png" alt="Icon">
+					<h3>Join Us</h3>
+				</div>
+				</a>			
   			</div>
 		</div>
 
 <!-- DESKTOP HEADER -->
 		<header class="clearfix desktop-only">
-			<div class="container">
-				<a href="index.html"><h1 class="logo">Logo</h1></a>
-				<nav>
+				<div class="logo-holder">
+				<a href="index.html"><img src="images/logo-grey.png" alt="Logo"></a>
+				</div>
+				<nav class="nav">
 					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="curriculum.html">Curriculum</a></li>
-						<li><a href="resources.html">Other Resources</a></li>
-						<li><a href="involved.html">Get Involved</a></li>
-						<li><a href="#">Donate</a></li>
+						<li class="nav-item"><a href="about.html">About Us</a></li>
+						<li class="nav-item"><a href="curriculum.html">Curriculum</a></li>
+						<li class="nav-item"><a href="resources.html">Other Resources</a></li>
+						<li class="nav-item"><a href="involved.html">Get Involved</a></li>
+						<li class="nav-item"><a href="#">Donate</a></li>
 					</ul>
 				</nav>
-			</div>
 		</header>
 
 		<img src="images/curric.png" alt="Curriculum" class="header-image">
 		<div class="curriculum about-us clearfix">
-		
-		<div class="col-50">
 		
 		<p>
 			We believe in the power of stories and their ability to remind us who we are and who we want to be. Our first curriculum focuses on Chinese Americans and their history in the United States. Spanning almost five centuries, the history of Chinese in America has witnessed labor exploitation, ostracization, and Exclusion as the Chinese became the first targets of America’s anti-immigrant legislation. However, theirs is a story of resilience: even at the lowest points, Chinese Americans formed coalitions and fought for their rights while building robust communities. 
@@ -74,19 +81,19 @@
 			We’d love to hear about how our curriculum and these narratives are being shared! 
 		</p>
 
+		<div class="reg-box">
+			<div class="col-50 cover">
+				<img src="images/cover.png" alt="Curriculum Cover">
+			</div>
 
-		</div>
+			<div class="col-50">
+				<div class="curriculum-form-holder form form-holder hide-on-submit mobile-hide">
+				<h2>Register</h2>
+				<p>Please fill out the information below. After you click send, you will be redirected to a PDF version of the curriculum.</p>
+				<form name="contact" action="https://formspree.io/immigranthistoryinitiative@gmail.com" method="POST" enctype="text/plain" netlify>
 
-		<div class="col-50">
-		<div class="curriculum-form-holder form form-holder hide-on-submit">
-			<h2>Register</h2>
-			<form name="contact" action="https://formspree.io/immigranthistoryinitiative@gmail.com" method="POST" enctype="text/plain" netlify>
-
-    			<label for="fname">First Name</label>
+    			<label for="fname">Name</label>
     			<input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    			<label for="lname">Last Name</label>
-    			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
     			<label for="email">Email</label>
     			<input type="text" id="email" name="_replyto" placeholder="youremail@something.com">
@@ -95,11 +102,13 @@
     			<input type="text" id="location" name="location" placeholder="City, State">
 
     			<label for="subject">Why Are You Downloading This Curriculum?</label>
-    			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    			<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
 
     			<input type="submit" id="register" value="Send">
 
-  			</form>
+  				</form>
+  				</div>
+			</div>
 		</div>
 
 		<div id="show-on-submit" class="hide">
@@ -107,7 +116,7 @@
 			<p>Thanks for registering! Please <a href="#">click here to download our curriculum.</a></p>
 			</div>
 		</div>
-		</div>
+		
 		</div>
 		<div class="curriculum hide col-50 clearfix" >
 			
@@ -119,7 +128,7 @@
 		</aside>
 
 		<footer>
-			<h4 class="logo">Logo</h4>
+			<img src="images/logo-green.png" alt="Logo">
 
 			<ul class="hide">
 				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>

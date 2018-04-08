@@ -11,45 +11,45 @@
 	//   - have the text in the ```<p>``` tag slide down along with a "Read Less" link 
 	// in the blog post using  ```$.slideDown()``` and ```$.show()```
 
-	$('.readmore').click(function(event){
-	event.preventDefault();
+// 	$('.readmore').click(function(event){
+// 	event.preventDefault();
 	
-		$('#show-this-on-click').slideDown().show();
+// 		$('#show-this-on-click').slideDown().show();
 		
-		$('.readless').show();
+// 		$('.readless').show();
 
-		$('.main').addClass('main-read-more');
+// 		$('.main').addClass('main-read-more');
 
-		$('html, body').animate({
-    		scrollTop: $("#show-this-on-click").offset().top
-		}, 1000);
-
-
-
-	//   - hide the "Read More" link using ```$.hide()```
-
-		$('.readmore').hide();
-
-	});
+// 		$('html, body').animate({
+//     		scrollTop: $("#show-this-on-click").offset().top
+// 		}, 1000);
 
 
-// - If a user clicks "Read Less" on the primary column:
 
-	//   - have the ```<p>``` slide up and hide the "Read Less" link using ```$.slideUp()``` and ```$.hide()``` 
+// 	//   - hide the "Read More" link using ```$.hide()```
 
-	$('.readless').click(function(event){
-	event.preventDefault();
-		$('#show-this-on-click').slideUp();
-		$('.readless').hide();
-		$('.main').removeClass('main-read-more');
-		$('html, body').animate({
-    		scrollTop: $(".mission").offset().top
-		}, 1000);
+// 		$('.readmore').hide();
+
+// 	});
 
 
-	// 	- show the "Read More" link using```$.show()```
-		$('.readmore').show();
-	});
+// // - If a user clicks "Read Less" on the primary column:
+
+// 	//   - have the ```<p>``` slide up and hide the "Read Less" link using ```$.slideUp()``` and ```$.hide()``` 
+
+// 	$('.readless').click(function(event){
+// 	event.preventDefault();
+// 		$('#show-this-on-click').slideUp();
+// 		$('.readless').hide();
+// 		$('.main').removeClass('main-read-more');
+// 		$('html, body').animate({
+//     		scrollTop: $(".mission").offset().top
+// 		}, 1000);
+
+
+// 	// 	- show the "Read More" link using```$.show()```
+// 		$('.readmore').show();
+// 	});
 
 
 // CURRICULUM REGISTRATION FORM
@@ -73,10 +73,20 @@
 
 });
 
+// MOBILE CURRICULUM COVER
 
+// If a user clicks the cover
 
+	$('.cover').click(function(event){
+	event.preventDefault();
+	
+		$('.curriculum-form-holder').removeClass('mobile-hide') ;
 
+// Hide the cover
 
+		$('.cover').hide();
+
+});
 // // Scroll down after each nav item is clicked
 
 // 	$('.nav-item').click(function(event){
