@@ -78,7 +78,14 @@ a {
 }
 
 .header-image {
+  width: 80%;
+
+}
+
+.header-holder {
   width: 100%;
+  text-align: center;
+  background-color: white;
 }
 
 
@@ -536,6 +543,11 @@ footer p {
   nav, .desktop-only {
     display: none;
   }
+
+  .header-image {
+  width: 100%;
+
+}
 
   /*FONT SIZES*/
 
